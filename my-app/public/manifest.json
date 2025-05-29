@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Split-Screen Extension",
+  "version": "1.0",
+  "description": "Extension with dynamic split-screen layout",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open Full View"
+  },
+  "permissions": ["storage", "activeTab"],
+  "icons": {
+    "16": "vite.svg",
+    "48": "vite.svg",
+    "128": "vite.svg"
+  }
+}
