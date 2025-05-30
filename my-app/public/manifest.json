@@ -1,16 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Split-Screen Extension",
+  "name": "Split View Extension 2",
   "version": "1.0",
-  "description": "Extension with dynamic split-screen layout",
-  "action": {
-    "default_popup": "index.html",
-    "default_title": "Open Full View"
+  "description": "An extension that splits the current tab into 70-30 layout",
+  "permissions": ["sidePanel", "tabs", "scripting"],
+  "background": {
+    "service_worker": "background/serviceWorker.js"
   },
-  "permissions": ["storage", "activeTab"],
-  "icons": {
-    "16": "vite.svg",
-    "48": "vite.svg",
-    "128": "vite.svg"
+  "action": {
+    "default_popup": "index.html"
+  },
+  "side_panel": {
+    "default_path": "index.html#sidepanel"
   }
 }
